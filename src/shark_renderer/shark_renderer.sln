@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shark_renderer", "shark_renderer\shark_renderer.vcxproj", "{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Debug|x64.ActiveCfg = Debug|x64
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Debug|x64.Build.0 = Debug|x64
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Debug|x86.ActiveCfg = Debug|Win32
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Debug|x86.Build.0 = Debug|Win32
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Release|x64.ActiveCfg = Release|x64
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Release|x64.Build.0 = Release|x64
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Release|x86.ActiveCfg = Release|Win32
+		{AA531DB4-30F1-43FA-95E1-BC4C72C9EE95}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAC2B0A0-DA58-4CE5-9ECE-DD4FB96E5FA1}
+	EndGlobalSection
+EndGlobal
