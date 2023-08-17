@@ -114,15 +114,15 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\third_party\glfw-3.3.8.bin.WIN64\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\third_party\glfw-3.3.8.bin.WIN64\include;../../third_party/imgui;../../third_party/imgui/backends;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\third_party\glfw-3.3.8.bin.WIN64\lib-vc2019;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\third_party\glfw-3.3.8.bin.WIN64\lib-vc2019;E:\SouceCode\imgui\imgui-master\examples\libs\glfw\lib-vc2010-64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glfw3.lib;glfw3dll.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -142,10 +142,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="RTR_RenderWindow.h" />
+    <ClInclude Include="..\..\third_party\imgui\backends\imgui_impl_glfw.h" />
+    <ClInclude Include="..\..\third_party\imgui\backends\imgui_impl_opengl2.h" />
+    <ClInclude Include="..\..\third_party\imgui\backends\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\..\third_party\imgui\backends\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="..\..\third_party\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\third_party\imgui\imconfig.h" />
+    <ClInclude Include="..\..\third_party\imgui\imgui.h" />
+    <ClInclude Include="..\..\third_party\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\third_party\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\third_party\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\third_party\imgui\imstb_truetype.h" />
+    <ClInclude Include="Shark_Editor.h" />
+    <ClInclude Include="Shark_Engine.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RTR_RenderWindow.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\backends\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\backends\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\imgui_tables.cpp" />
+    <ClCompile Include="..\..\third_party\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Shark_Editor.cpp" />
+    <ClCompile Include="Shark_Engine.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
