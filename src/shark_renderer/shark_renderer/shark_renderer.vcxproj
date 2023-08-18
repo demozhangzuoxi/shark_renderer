@@ -155,6 +155,8 @@
     <ClInclude Include="..\..\third_party\imgui\imstb_truetype.h" />
     <ClInclude Include="Shark_Editor.h" />
     <ClInclude Include="Shark_Engine.h" />
+    <ClInclude Include="Shark_InspectorPanel.h" />
+    <ClInclude Include="Shark_Panel.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\third_party\imgui\backends\imgui_impl_glfw.cpp" />
@@ -168,6 +170,8 @@
     <ClCompile Include="..\..\third_party\imgui\imgui_widgets.cpp" />
     <ClCompile Include="Shark_Editor.cpp" />
     <ClCompile Include="Shark_Engine.cpp" />
+    <ClCompile Include="Shark_InspectorPanel.cpp" />
+    <ClCompile Include="Shark_Panel.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
